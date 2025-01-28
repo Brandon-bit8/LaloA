@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Base input styles */
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select,
+textarea {
+  @apply mt-1 block w-full rounded-md border-gray-300 shadow-sm;
+  @apply focus:border-blue-500 focus:ring-blue-500;
+  @apply bg-white px-3 py-2;
+}
+
+/* Button styles */
+button {
+  @apply transition-colors duration-200;
+}
+
+/* Table styles */
+table {
+  @apply w-full border-collapse;
+}
+
+th, td {
+  @apply border p-2;
+}
+
+/* Modal backdrop */
+.modal-backdrop {
+  @apply fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50;
+}
+
+/* Card styles */
+.card {
+  @apply bg-white rounded-lg shadow-md p-6;
+}
